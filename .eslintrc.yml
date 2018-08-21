@@ -1,0 +1,112 @@
+root: true
+env:
+  browser: false
+  node: true
+  es6: true
+  jquery: false
+  commonjs: true
+parserOptions:
+  ecmaVersion: 8
+  sourceType: module
+  ecmaFeatures:
+    jsx: false
+extends: 'eslint:recommended'
+
+rules:
+  indent:
+    - warn
+    - 2
+    - SwitchCase: 1
+      VariableDeclarator:
+        var: 1
+        let: 1
+        const: 3
+    #  MemberExpression: 1
+    #  outerIIFEBody: 0
+    #  FunctionExpression:
+    #    parameters: first
+  linebreak-style:
+    - warn
+    - unix
+  quotes: off
+  semi:
+    - error
+    - always
+    - omitLastInOneLineBlock: true
+  no-unused-vars:
+    - error
+    - argsIgnorePattern: "^_"
+  no-extra-semi: warn
+  no-extra-boolean-cast: error
+  no-case-declarations: off
+  no-empty:
+    - error
+    - allowEmptyCatch: true
+  one-var:
+    - error
+    - const: never
+      var: always
+      let: always
+      # initialized: always
+      # uninitialized: never
+  no-fallthrough:
+    - error
+    - commentPattern: "break[\\s\\w]*omitted"
+  key-spacing:
+    - error
+    - beforeColon: false
+      afterColon: true
+      mode: minimum
+  newline-after-var:
+    - warn
+    - always
+  keyword-spacing:
+    - error
+  space-before-function-paren:
+    - error
+    - never
+  space-before-blocks:
+    - error
+  rest-spread-spacing:
+    - error
+    - never
+  space-infix-ops:
+    - error
+  comma-spacing:
+    - error
+    - before: false
+      after: true
+  array-bracket-spacing:
+    - error
+    - never
+    - singleValue: true
+      arraysInArrays: false
+  comma-style:
+    - error
+    - last
+  curly:
+    - error
+  brace-style:
+    - warn
+    - stroustrup
+    - allowSingleLine: false
+  vars-on-top:
+    - error
+  prefer-arrow-callback:
+    - warn
+    - allowNamedFunctions: true
+  arrow-parens:
+    - error
+    - always
+  arrow-spacing:
+    - error
+  block-spacing:
+    - error
+  object-curly-spacing:
+    - error
+    - always
+    - arraysInObjects: true
+      objectsInObjects: true
+  # strict:
+  #  - warn
+  #  - global
