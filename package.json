@@ -1,6 +1,6 @@
 {
   "name": "cg-ftp-mutex",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "FTP mutex implementation",
   "main": "lib/main.js",
   "directories": {
@@ -9,13 +9,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+https://github.com/unixs/cg-ftp-mutex.git",
+  "repository": "git+https://github.com/competentum/cg-ftp-mutex.git",
   "author": "Alexander Feodorov <afedorov@competentum.ru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/unixs/cg-ftp-mutex/issues"
+    "url": "https://github.com/competentum/cg-ftp-mutex/issues"
   },
-  "homepage": "https://github.com/unixs/cg-ftp-mutex#readme",
+  "homepage": "https://github.com/competentum/cg-ftp-mutex#readme",
   "private": false,
   "dependencies": {
     "ftp": "^0.3.10"
